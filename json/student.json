@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "dwi",
+    "major": "math",
+    "semester": 4,
+    "city": "salatiga"
+  },
+  {
+    "id": 2,
+    "name": "malika bazia",
+    "major": "devops",
+    "semester": 4,
+    "city": "palembang"
+  },
+  {
+    "id": 3,
+    "name": "keiza",
+    "major": "religi",
+    "semester": 1,
+    "city": "palembang"
+  },
+  {
+    "id": 4,
+    "name": "reni a",
+    "major": "healty foods",
+    "semester": 6,
+    "city": "palembang"
+  }
+]

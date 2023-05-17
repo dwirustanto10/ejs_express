@@ -1,0 +1,44 @@
+[
+   {
+      "id": 1,
+      "name": "dwi",
+      "subject": "math",
+      "age": 40,
+      "city": "salatiga"
+   },
+   {
+      "id": 2,
+      "name": "reni",
+      "subject": "alhadist",
+      "age": 25,
+      "city": "salatiga"
+   },
+   {
+      "id": 4,
+      "name": "mas dwi",
+      "subject": "big data",
+      "age": 30,
+      "city": "solo"
+   },
+   {
+      "id": 5,
+      "name": "yudistira",
+      "subject": "almukarom",
+      "age": 17,
+      "city": "Palembang"
+   },
+   {
+      "id": 7,
+      "name": "bazia",
+      "subject": "AI",
+      "age": 15,
+      "city": "Palembang"
+   },
+   {
+      "id": 8,
+      "name": "reni",
+      "subject": "alhadist",
+      "age": 21,
+      "city": "salatiga"
+   }
+]
