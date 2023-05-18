@@ -19,10 +19,11 @@ class LecturerController {
 
   static create(req, res) {
     // console.log(req.body);
-    // res.send('Create Lecturer page');
+
     Lecturer.create(req.body)
       .then((result) => {
-        res.send(result);
+        // res.send(result);
+        res.redirect('/lectures');
       })
       .catch((err) => {
         res.send(err);
