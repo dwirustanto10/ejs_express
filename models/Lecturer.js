@@ -15,7 +15,7 @@ class Lecturer {
 
   static getAllLecturers() {
     return new Promise((resolve, rejects) => {
-      fs.readFile('./lectures.json', 'utf8', (err, data) => {
+      fs.readFile('./json/lectures.json', 'utf8', (err, data) => {
         if (err) {
           rejects(err);
         } else {
@@ -125,7 +125,7 @@ class Lecturer {
   }
 
   static save(lecturers) {
-    fs.writeFileSync('./lectures.json', JSON.stringify(lecturers, null, 3));
+    fs.writeFileSync('./json/lectures.json', JSON.stringify(lecturers, null, 3));
   }
 }
 
