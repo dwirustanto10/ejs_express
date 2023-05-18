@@ -5,7 +5,10 @@ const route = require('express').Router();
 // });
 
 route.get('/', (req, res) => {
-  res.send("Hello world, i'm Dwi Rustanto");
+  // res.send({
+  //   message: 'Welcome My Home Page',
+  // });
+  res.render('index.ejs');
 });
 
 const lectureRoutes = require('./lecture');

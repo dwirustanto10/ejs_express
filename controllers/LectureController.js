@@ -5,13 +5,16 @@ class LecturerController {
     // res.send('Lecturer page');
     Lecturer.getAllLecturers()
       .then((result) => {
-        // console.log(result)
-        res.send(result);
+        // res.send(result);
+        res.render('lecturer.ejs', { lecturers: result });
       })
       .catch((err) => {
-        // console.log(err)
         res.send(err);
       });
+  }
+
+  static createPage(req, res) {
+    res.render('lecturerAddPage.ejs');
   }
 
   static create(req, res) {
@@ -25,6 +28,7 @@ class LecturerController {
         res.send(err);
       });
   }
+
   static getHistory(req, res) {
     const id = Number(req.params.id);
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        font-weight: bold;
+        font-size: small;
+        padding: 4px 8px;
+        color: aliceblue;
+        background-color: rgb(201, 47, 47);
+      }
+      a:hover {
+        border-radius: 20px;
+        background-color: blue;
+      }
+      table {
+        width: 600px;
+      }
+      tr:hover {
+        background-color: aquamarine;
+      }
+      th {
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      th,
+      td {
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <a href="/lectures">Lecturers</a>
+    <a href="/students">Students</a>
+    <!-- <a href="/lectures/delete/3">deleter</a> -->
+    <hr />
+    <h3>Lecturer Page</h3>
+    <a href="/lectures/create">add lecture</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias nulla modi? Saepe asperiores ratione quia a iure odit quasi animi recusandae, laudantium expedita accusamus natus deserunt vero at repudiandae facilis non
+      tenetur maxime dolor fugiat voluptatibus rem assumenda autem. Porro at nisi veniam voluptate?
+    </p>
+
+    <div>
+      <table border="1" cellspacing="0">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>subject</th>
+            <th>age</th>
+            <th>city</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% lecturers.forEach(lecturer => { %>
+          <tr>
+            <td><%= lecturer.id %></td>
+            <td><%= lecturer.name %></td>
+            <td><%= lecturer.subject %></td>
+            <td><%= lecturer.age %></td>
+            <td><%= lecturer.city %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <a href="/">Back Home</a>
+  </body>
+</html>

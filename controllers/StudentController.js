@@ -5,8 +5,8 @@ class StudentController {
     // res.send('Lecturer page');
     Student.getAllStudents()
       .then((result) => {
-        // console.log(result)
-        res.send(result);
+        // res.send(result);
+        res.render('students.ejs', { students: result });
       })
       .catch((err) => {
         // console.log(err)
