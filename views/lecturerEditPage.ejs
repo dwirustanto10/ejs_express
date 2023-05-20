@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        font-weight: bold;
+        font-size: small;
+        padding: 4px 8px;
+        color: aliceblue;
+        background-color: rgb(201, 47, 47);
+      }
+      a:hover {
+        border-radius: 20px;
+        background-color: blue;
+      }
+      table {
+        width: 600px;
+      }
+      tr:hover {
+        background-color: aquamarine;
+      }
+      th {
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      th,
+      td {
+        padding: 5px;
+        text-align: center;
+      }
+      .form-main {
+        width: 600px;
+      }
+      .form-group {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      button {
+        background-color: rgb(20, 146, 37);
+        padding: 4px;
+        font-weight: bold;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <a href="/lectures">Lecturers</a>
+    <a href="/students">Students</a>
+    <!-- <a href="/lectures/delete/3">deleter</a> -->
+    <hr />
+    <h3>Edit Lecture Page</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias nulla modi? Saepe asperiores ratione quia a iure odit quasi animi recusandae, laudantium expedita accusamus natus deserunt vero at repudiandae facilis non
+      tenetur maxime dolor fugiat voluptatibus rem assumenda autem. Porro at nisi veniam voluptate?
+    </p>
+
+    <div class="form-main">
+      <form action="/lectures/update/<%= lecturer.id%>" method="post">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" name="name" value="<%= lecturer.name%>" />
+        </div>
+        <div class="form-group">
+          <label for="">Subject</label>
+          <input type="text" name="subject" value=" <%= lecturer.subject%>" />
+        </div>
+        <div class="form-group">
+          <label for="">Age</label>
+          <input type="text" name="age" value=" <%= lecturer.age%>" />
+        </div>
+        <div class="form-group">
+          <label for="">City</label>
+          <input type="text" name="city" value=" <%= lecturer.city%>" />
+        </div>
+        <br />
+        <div class="form-group">
+          <button type="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <hr />
+
+    <a href="/">Back Home</a>
+  </body>
+</html>
