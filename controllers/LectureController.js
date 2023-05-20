@@ -35,7 +35,8 @@ class LecturerController {
 
     Lecturer.getHistory(id)
       .then((result) => {
-        res.send(result);
+        // res.send(result);
+        res.render('lecturerInfo.ejs', { lecturer: result });
       })
       .catch((err) => {
         res.send(err);
@@ -47,7 +48,20 @@ class LecturerController {
 
     Lecturer.delete(id)
       .then((result) => {
-        res.send(result);
+        // res.send(result);
+        res.redirect('/lectures');
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+  }
+
+  static updatePage(req, res) {
+    const id = +req.params.id;
+
+    Lecturer.getHistory(id)
+      .then((result) => {
+        res.render('lecturerEditPage.ejs', { lecturer: result });
       })
       .catch((err) => {
         res.send(err);
@@ -59,7 +73,8 @@ class LecturerController {
 
     Lecturer.update(id, req.body)
       .then((result) => {
-        res.send(result);
+        // res.send(result);
+        res.redirect('/lectures');
       })
       .catch((err) => {
         res.send(err);

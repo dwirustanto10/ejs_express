@@ -73,6 +73,7 @@
           <% lecturers.forEach(lecturer => { %>
           <tr>
             <td><%= lecturer.id %></td>
+
             <td>
               <a class="info-user" href="/lectures/history/<%=lecturer.id%>"> <%= lecturer.name %> </a>
             </td>
@@ -80,8 +81,8 @@
             <td><%= lecturer.age %></td>
             <td><%= lecturer.city %></td>
             <td>
-              <a href="edit">Edit</a>
-              <a href="delete">Delete</a>
+              <a href="/lectures/update/<%=lecturer.id%>">Edit</a>
+              <a href="/lectures/delete/<%=lecturer.id%>">Delete</a>
             </td>
           </tr>
           <% }) %>

@@ -1,30 +1,16 @@
 [
-  {
-    "id": 1,
-    "name": "dwi",
-    "subject": "math",
-    "age": 40,
-    "city": "salatiga"
-  },
-  {
-    "id": 2,
-    "name": "reni",
-    "subject": "alhadist",
-    "age": 25,
-    "city": "palembang"
-  },
-  {
-    "id": 3,
-    "name": "alvaro",
-    "subject": "Data analysis",
-    "age": "45",
-    "city": "Madinah"
-  },
-  {
-    "id": 4,
-    "name": "bazia",
-    "subject": "cyber security",
-    "age": "21",
-    "city": "LA"
-  }
+   {
+      "id": 1,
+      "name": "Dwi",
+      "subject": " math",
+      "age": "40",
+      "city": " salatiga"
+   },
+   {
+      "id": 2,
+      "name": "Reni",
+      "subject": "   alhadist",
+      "age": "41",
+      "city": "   palembang"
+   }
 ]
